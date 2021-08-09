@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="nh&ks.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body onload="init()">
+        <div class="back"><a href="file:///D:/khachsan/home.html">Về Trang Chủ</a></div>
+        <div class="body">
+            <div class="text_album">
+                <nav>
+                    <ul>
+                        <li><a href="javascript:;" checked onclick="showAlbum('album_all')">Tất Cả</a></li>
+                        <li><a href="javascript:;" onclick="showAlbum('album_sanh')">Sảnh</a></li>
+                        <li><a href="javascript:;" onclick="showAlbum('album_nhahang')">Nhà Hàng</a></li>
+                        <li><a href="javascript:;" onclick="showAlbum('album_phongngu')">Phòng</a></li>
+                        <li><a href="javascript:;" onclick="showAlbum('album_baibien')">View</a></li>
+                        <li><a href="javascript:;" onclick="showAlbum('album_giaitri')">Dịch vụ & giải trí</a></li>
+                    </ul>
+                </nav>
+                <div class="albums">
+                    <div class="album_all" id="album_all">
+                        <img src="sanh/n1.jpg">
+                        <img src="sanh/n2.jpg">
+                        <img src="sanh/n3.jpg">
+                        <img src="sanh/n4.jpg">
+                        <img src="sanh/n5.jpg">
+                        <img src="baibien/n1.jpg">
+                        <img src="baibien/n2.jpg">
+                        <img src="baibien/n3.jpg">
+                        <img src="baibien/n4.jpg">
+                        <img src="baibien/n5.jpg">
+                        <img src="baibien/n6.jpg">
+                        <img src="baibien/n7.jpg">
+                        <img src="baibien/n9.jpg">
+                        <img src="baibien/n10.jpg">
+                        <img src="baibien/n11.jpg">
+                        <img src="baibien/n12.jpg">
+                        <img src="baibien/n13.jpg">
+                        <img src="baibien/n14.jpg">
+                        <img src="baibien/n15.jpg">
+                        <img src="phongngu/n1.jpg">
+                        <img src="phongngu/n2.jpg">
+                        <img src="phongngu/n3.jpg">
+                        <img src="phongngu/n4.jpg">
+                        <img src="phongngu/n5.jpg">
+                        <img src="phongngu/n6.jpg">
+                        <img src="phongngu/n7.jpg">
+                        <img src="phongngu/n8.jpg">
+                        <img src="phongngu/n9.jpg">
+                        <img src="phongngu/n10.jpg">
+                        <img src="phongngu/n11.jpg">
+                        <img src="phongngu/n12.jpg">
+                        <img src="phongngu/n13.jpg">
+                        <img src="phongngu/n14.jpg">
+                        <img src="phongngu/n15.jpg">
+                        <img src="phongngu/n16.jpg">
+                        <img src="nhahang/n1.jpg">
+                        <img src="nhahang/n2.jpg">
+                        <img src="nhahang/n3.jpg">
+                        <img src="nhahang/n4.jpg">
+                        <img src="nhahang/n5.jpg">
+                        <img src="nhahang/n6.jpg">
+                        <img src="nhahang/n7.jpg">
+                        <img src="nhahang/n8.jpg">
+                        <img src="nhahang/n9.jpg">
+                        <img src="nhahang/n10.jpg">
+                        <img src="nhahang/n11.jpg">
+                        <img src="nhahang/n12.jpg">
+                        <img src="nhahang/n13.jpg">
+                        <img src="nhahang/n14.jpg">
+                        <img src="nhahang/n15.jpg">
+                        <img src="nhahang/n16.jpg">
+                        <img src="giaitri/n1.jpg">
+                        <img src="giaitri/n2.jpg">
+                        <img src="giaitri/n3.jpg">
+                        <img src="giaitri/n4.jpg">
+                        <img src="giaitri/n5.jpg">
+                        <img src="giaitri/n6.jpg">
+                        <img src="giaitri/n7.jpg">
+                        <img src="giaitri/n8.jpg">
+                        <img src="giaitri/n9.jpg">
+                        <img src="giaitri/n10.jpg">
+                        <img src="giaitri/n11.jpg">
+                        <img src="giaitri/n12.jpg">
+                    </div>
+                    <div class="album_sanh" id="album_sanh">
+                        <img src="sanh/n1.jpg">
+                        <img src="sanh/n2.jpg">
+                        <img src="sanh/n3.jpg">
+                        <img src="sanh/n4.jpg">
+                        <img src="sanh/n5.jpg">
+                    </div>
+                    <div class="album_nhahang" id="album_nhahang">
+                        <img src="nhahang/n1.jpg">
+                        <img src="nhahang/n2.jpg">
+                        <img src="nhahang/n3.jpg">
+                        <img src="nhahang/n4.jpg">
+                        <img src="nhahang/n5.jpg">
+                        <img src="nhahang/n6.jpg">
+                        <img src="nhahang/n7.jpg">
+                        <img src="nhahang/n8.jpg">
+                        <img src="nhahang/n9.jpg">
+                        <img src="nhahang/n10.jpg">
+                        <img src="nhahang/n11.jpg">
+                        <img src="nhahang/n12.jpg">
+                        <img src="nhahang/n13.jpg">
+                        <img src="nhahang/n14.jpg">
+                        <img src="nhahang/n15.jpg">
+                        <img src="nhahang/n16.jpg">
+                    </div>
+                    <div class="album_phongngu" id="album_phongngu">
+                        <img src="phongngu/n1.jpg">
+                        <img src="phongngu/n2.jpg">
+                        <img src="phongngu/n3.jpg">
+                        <img src="phongngu/n4.jpg">
+                        <img src="phongngu/n5.jpg">
+                        <img src="phongngu/n6.jpg">
+                        <img src="phongngu/n7.jpg">
+                        <img src="phongngu/n8.jpg">
+                        <img src="phongngu/n9.jpg">
+                        <img src="phongngu/n10.jpg">
+                        <img src="phongngu/n11.jpg">
+                        <img src="phongngu/n12.jpg">
+                        <img src="phongngu/n13.jpg">
+                        <img src="phongngu/n14.jpg">
+                        <img src="phongngu/n15.jpg">
+                        <img src="phongngu/n16.jpg">
+                    </div>
+                    <div class="album_baibien" id="album_baibien">
+                        <img src="baibien/n1.jpg">
+                        <img src="baibien/n2.jpg">
+                        <img src="baibien/n3.jpg">
+                        <img src="baibien/n4.jpg">
+                        <img src="baibien/n5.jpg">
+                        <img src="baibien/n6.jpg">
+                        <img src="baibien/n7.jpg">
+                        <img src="baibien/n9.jpg">
+                        <img src="baibien/n10.jpg">
+                        <img src="baibien/n11.jpg">
+                        <img src="baibien/n12.jpg">
+                        <img src="baibien/n13.jpg">
+                        <img src="baibien/n14.jpg">
+                        <img src="baibien/n15.jpg">
+                    </div>
+                    <div class="album_giaitri" id="album_giaitri">
+                        <img src="giaitri/n1.jpg">
+                        <img src="giaitri/n2.jpg">
+                        <img src="giaitri/n3.jpg">
+                        <img src="giaitri/n4.jpg">
+                        <img src="giaitri/n5.jpg">
+                        <img src="giaitri/n6.jpg">
+                        <img src="giaitri/n7.jpg">
+                        <img src="giaitri/n8.jpg">
+                        <img src="giaitri/n9.jpg">
+                        <img src="giaitri/n10.jpg">
+                        <img src="giaitri/n11.jpg">
+                        <img src="giaitri/n12.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="text_booking">
+                <form>
+                    <div class="content">Booking</div>
+                    <div class="text_name">
+                        <label class="label_name">Họ Tên:</label>
+                        <input type="input_name" name="hoten" class="name" id="booking1">
+                    </div>
+                    <div class="text_room">
+                        <label class="label_room">Loại phòng:</label>
+                        <input list="browsers" name="loaiphong" class="input_room" id="booking2">
+                        <datalist id="browsers">
+                            <option value="1 giường">
+                            <option value="2 giường">
+                            <option value="4 giường">                        
+                            <option value="6 giường">
+                        </datalist>
+                    </div>
+                    <div class="text_date">
+                        <div class="left_date">
+                            <label class="label_date">Ngày đi:</label>
+                            <input type="date" value="date" class="input_date" id="booking3">
+                        </div>
+                        <div class="right_date">
+                            <label  class="label_date"> Ngày về:</label>
+                            <input type="date" value="date" class="input_date" id="booking4">
+                        </div>
+                    </div>
+                    <div class="text_Cm">
+                        <label class="label_Cm">Nhập Căn cước công dân:</label>
+                        <input type="text" placeholder="CMND" name="cmnd" class="input_Cm" id="booking5">
+                    </div>
+                    <div class="text_phone">
+                        <label class="label_phone">Nhập số điện loại:</label>
+                        <input type="text" placeholder="09XXXXXXXXXX" name="phone" class="input_phone" id="booking6">
+                    </div>
+                    <button class="submit" onclick="booking()">Đặt ngay</button>
+                </form>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myImageModal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="" id="imgModalid" aria-label="img"/>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script type="text/javascript"></script>
+        <script src="nh_ks.js"></script>
+    </body>
+</html>
